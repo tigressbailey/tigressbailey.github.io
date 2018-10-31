@@ -2,13 +2,14 @@
 uri: tigressbailey.github.io
 url: https://tigressbailey.github.io
 name: Bailey Zhang
-title: Bailey Zhang
+title: Keep Calm and Carry On
 email: bailey.zhang1986@gmail.com
 author: tigressbailey
 baseurl: ""
 keywords: "bailey zhang, tigressbailey"
 description: "My name’s Bailey and I’m a front-end developer. I have experience making software, web app and website. I have worked at a number of companies gaining teamwork and leadership skills."
 social_username: tigressbailey
+linkedin_username: bailey-zhang
 
 # Build settings ...
 sass:
