@@ -23,7 +23,7 @@ and
 sudo apt install nodejs
 ```
 
-# Check server open ports from your local laptop
+# Check server open ports from the local laptop
 ```
 nmap SERVER_IP
 ```
@@ -60,4 +60,109 @@ sudo ufw enable
 And block all outgoing HTTP connections
 ```
 ufw reject out http
+```
+
+# Update system dependencies automatically
+```
+sudo apt install unattended-upgrades
+```
+Check the config is right
+```
+cat /etc/apt/apt.conf.d/20auto-upgrades
+```
+It should be
+```
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Unattended-Upgrade "1";
+```
+Only update security packages because the software package may change a lot and break something
+```
+sudo vi /etc/apt/apt.conf.d/50unattended-upgrades
+```
+Comment the `"${distro_id}:${distro_codename}";` line and the file would be:
+```
+Unattended-Upgrade::Allowed-Origins {
+//      "${distro_id}:${distro_codename}";
+        "${distro_id}:${distro_codename}-security";
+        // Extended Security Maintenance; doesn't necessarily exist for
+        // every release and this system may not have it installed, but if
+        // available, the policy for updates is such that unattended-upgrades
+        // should also install from here by default.
+        "${distro_id}ESM:${distro_codename}";
+//      "${distro_id}:${distro_codename}-updates";
+//      "${distro_id}:${distro_codename}-proposed";
+//      "${distro_id}:${distro_codename}-backports";
+};
+
+// List of packages to not update (regexp are supported)
+Unattended-Upgrade::Package-Blacklist {
+//      "vim";
+//      "libc6";
+//      "libc6-dev";
+//      "libc6-i686";
+};
+```
+
+# Install Fail2ban and check the ban log
+1. Install it
+```
+sudo apt install fail2ban
+```
+2. Copy jail file
+```
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+```
+3. Edit your own strategy
+```
+sudo vi /etc/fail2ban/jail.local
+```
+> If you misconfigure fail2ban, you can lock yourself out of your server!
+4. Check the ban history
+```
+sudo tail -f /var/log/fail2ban.log
+```
+
+5. Find and Grep
+- Find: filter file names
+```
+find /directory -name filename.txt
+```
+  - `-name` can be replaced with `type`, `empty`, `executable` and `writable`
+  - For example, Find all empty files in /etc
+  ```
+  find /etc -type f -empty
+  ```
+  - Find all directories with the word log
+  ```
+  find / -type d -name log
+  ```
+- Grep: filter file contents
+```
+grep -i ‘jem’ /var/www
+```
+  - Search in gzip file
+  ```
+  zgrep FILE
+  ```
+- Find running node processes
+```
+ps aux | grep node
+```
+
+# Redirection operators
+```
+|
+read from stdout
+>
+write stdout to file
+>>
+append stdout to file
+<
+read from stdin
+2>
+read from stderr
+```
+For example: Read from bar to foo and write in baz
+```
+foo < bar > baz
 ```
