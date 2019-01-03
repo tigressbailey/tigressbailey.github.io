@@ -166,3 +166,55 @@ For example: Read from bar to foo and write in baz
 ```
 foo < bar > baz
 ```
+
+#Shell
+
+### Display current shell
+```
+echo $0
+```
+
+### chmod
+
+#### Andybody can read, write, execute.
+```
+chmod 777 filename
+chmod -R 777 dir
+```
+#### Owner&Group can read, write, execute. Everyone else can read, execute.
+```
+chmod 775 filename
+chmod -R 775 dir
+```
+#### Owner & Group can read, write, execute. Everyone else can read.
+```
+chmod 774 filename
+chmod -R 774 dir
+```
+#### Owner can read, write, execute. Everyone else can read, execute.
+```
+chmod 755 filename
+chmod -R 755 dir
+```
+#### Owner can read, write, execute. No one else has any rights.
+```
+chmod 700 filename
+chmod -R 700 dir
+```
+#### Everyone can read, write.
+```
+chmod 666 filename
+chmod -R 666 dir
+```
+
+#### Owner & Group can read, write. Everyone else can read.
+```
+chmod 664 filename
+chmod -R 664 dir
+```
+
+#### Owner can read, write. Everyone else can read.
+```
+chmod 644 filename
+chmod -R 644 dir
+```
