@@ -218,3 +218,32 @@ chmod -R 664 dir
 chmod 644 filename
 chmod -R 644 dir
 ```
+
+# HTTPS
+
+## Use certbot
+
+### Add certbot repo
+```
+sudo add-apt-repository ppa:certbot/certbot
+```
+
+### Pull in new repository information
+```
+sudo apt update
+```
+
+### Install Certbot
+```
+sudo apt install python-certbot-nginx
+```
+
+### Use certbot to get certificate
+```
+sudo certbot --nginx
+```
+
+### Test auto renew
+```
+sudo certbot renew --dry-run
+```
