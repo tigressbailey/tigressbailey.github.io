@@ -247,3 +247,31 @@ sudo certbot --nginx
 ```
 sudo certbot renew --dry-run
 ```
+
+# Cron - run task periodically
+
+### open crontab for editing
+```
+sudo crontab -e
+```
+
+In this file add
+```
+00 12 * * 1 certbot renew
+```
+That means renew certificate every week at 12PN on Monday
+
+[Know the cron job mean](https://crontab.guru/#5_4_*_*_5)
+
+# Gzip
+
+Open the nginx config file
+```
+sudo vi /etc/nginx/nginx.conf
+```
+
+Refer this
+```
+http://nginx.org/en/docs/http/ngx_http_gzip_module.html
+```
+
