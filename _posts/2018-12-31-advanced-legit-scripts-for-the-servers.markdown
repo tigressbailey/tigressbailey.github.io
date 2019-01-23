@@ -269,9 +269,38 @@ Open the nginx config file
 ```
 sudo vi /etc/nginx/nginx.conf
 ```
+Add
+```
+gzip     on;
+```
 
-Refer this
+Refer this for further options
 ```
 http://nginx.org/en/docs/http/ngx_http_gzip_module.html
 ```
 
+# Expires headers
+
+Nginx will provide `Etag` originally.
+That means when the file doesn't change, the server will only send back a Etag.
+And the client request status will be 304 - Not modified.
+
+But it bring a request from the client browser eventually.
+Here we comes the expires headers!
+
+## Set expires headers
+
+Open site file
+```
+sudo vi /etc/nginx/sites-available/default
+```
+Add settings for expiring static folder's assets in 30 days
+```
+location /static/ {
+  expires 30d;
+  proxy_pass http://127.0.0.1:3001/static/;
+}
+```
+Relod Nginx service and verify the result.
+The static assets will be loaded from disk cache(or memory cache) and the request status is 200.
+The `cache-control` and `expires` will match 30 days.
