@@ -304,3 +304,65 @@ location /static/ {
 Relod Nginx service and verify the result.
 The static assets will be loaded from disk cache(or memory cache) and the request status is 200.
 The `cache-control` and `expires` will match 30 days.
+
+## Cache
+
+Open site file
+```
+sudo vi /etc/nginx/sites-available/default
+```
+Add settings for cache path etc..
+```
+proxy_cache_path /tmp/nginx levels=1:2 keys_zone=slowfile_cache:10m inactive=60m use_temp_path=off;
+
+proxy_cache_key "$request_uri";
+```
+Add cache folder
+```
+location /slowfile {
+  proxy_cache_valid 1m;
+  proxy_ignore_headers Cache-Control;
+  add_header X-Proxy-Cache $upstream_cache_status;
+  proxy_cache slowfile_cache;
+  proxy_pass http://127.0.0.1:3001/slowfile;
+}
+```
+Verify it in the browser and see the response header's `X-Proxy-Cache` will from `MISS` to `HIT`
+
+## Websockets
+
+Open site file
+```
+sudo vi /etc/nginx/sites-available/default
+```
+Add websocket to notify the upgrade in the `location  / {}` section
+```
+location / {
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection "upgrade";
+
+  proxy_pass http://127.0.0.1:3001;
+}
+```
+
+## HTTP2
+Open site file
+```
+sudo vi /etc/nginx/sites-available/default
+```
+Modify the certbot listen line from `listen 443 ssl;` to below
+```
+listen 443 http2 ssl; managed by certbot
+```
+
+## Redirect
+Open site file
+```
+sudo vi /etc/nginx/sites-available/default
+```
+Add a permanent redirect(Will be cache by the search engine)
+```
+location /help {
+  return 301 https://developer.mozilaa.org/en-US/;
+}
+```
