@@ -180,6 +180,11 @@ Once it is installed. The configuration files exist at:
 }
 ```
 
+### Add more uuid
+```
+cat /proc/sys/kernel/random/uuid
+```
+
 # Client side
 
 ### Homebrew install
