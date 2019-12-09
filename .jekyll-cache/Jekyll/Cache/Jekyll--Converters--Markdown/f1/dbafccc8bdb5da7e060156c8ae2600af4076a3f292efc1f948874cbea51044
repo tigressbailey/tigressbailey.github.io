@@ -1,0 +1,22 @@
+I"�<p>Recently, I’ve found <code class="highlighter-rouge">brew update</code> is extremely slow no matter I was in the office or at home.
+To be honest, the network is not so good in China these days.
+So, here comes the solution.</p>
+
+<ol>
+  <li>Set up a Socks5 proxy.</li>
+  <li>Open the bask profile or .zshrc. I’m using ZSH, so:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi $HOME/.zshrd
+</code></pre></div>    </div>
+  </li>
+  <li>Add the proxy and unproxy command into the file. For example, the socks5 URL is 127.0.0.1:1081.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias proxy='export all_proxy=socks5://127.0.0.1:1081'
+alias unproxy='unset all_proxy'
+</code></pre></div>    </div>
+  </li>
+  <li>Save and <code class="highlighter-rouge">source $HOME/.zshrc</code></li>
+</ol>
+
+<p>Now, use <code class="highlighter-rouge">proxy &amp;&amp; brew update &amp;&amp; unproxy</code> is resolved my problem.</p>
+
+<!--more-->
+:ET

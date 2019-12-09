@@ -1,0 +1,306 @@
+I"-<h1 id="traceroute">traceroute</h1>
+
+<p><code class="highlighter-rouge">traceroute</code> is a computer network diagnostic tool for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>traceroute example.com
+</code></pre></div></div>
+
+<h1 id="vim">vim</h1>
+
+<p>https://vimgifs.com/</p>
+
+<p>https://linuxmoz.com/vi-commands-cheat-sheet/</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>u (undo)
+control + r (redo)
+dd  (delete the line)
+/keyword (search word)
+n (move forward to next search result)
+N (move backward to previous search result)
+:q! (discard change and quit)
+:wq (save change and quit)
+</code></pre></div></div>
+
+<h1 id="ssh">ssh</h1>
+
+<h3 id="access-the-home-directory">access the home directory</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~
+</code></pre></div></div>
+
+<h3 id="create-keygen">create keygen</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/.ssh/
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa
+</code></pre></div></div>
+
+<h3 id="view-keygen-locally">view keygen locally</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>less keyname
+less keyname.pub
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat ~/.ssh/my_key.pub
+</code></pre></div></div>
+
+<h3 id="vps-routine">vps routine</h3>
+
+<p>Log as root</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -i ~/.ssh/ my_key root@128.199.166.66
+</code></pre></div></div>
+
+<h3 id="check-server-status">Check server status</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>top
+</code></pre></div></div>
+<p>htop is better one than just top</p>
+
+<h4 id="htop">htop</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install htop
+
+htop
+</code></pre></div></div>
+
+<h3 id="regular-update-prefer-once-a-week">regular update (prefer once a week)</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get update
+</code></pre></div></div>
+
+<h1 id="monitor-the-latest-logimportant-for-checking-potential-security-issue">Monitor the latest log(Important for checking potential security issue)</h1>
+
+<h3 id="tail-the-log-file">tail the log file</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo tail -f /var/log/auth.log
+</code></pre></div></div>
+
+<h3 id="add-user">add user</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adduser username
+</code></pre></div></div>
+
+<h3 id="grant-user-access">Grant user access</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usermod -aG sudo username
+</code></pre></div></div>
+
+<h3 id="confirm-the-group-is-assigned">Confirm the group is assigned</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>id -G -n username
+</code></pre></div></div>
+
+<h2 id="manage-user">Manage user</h2>
+
+<h3 id="change-pwd">Change pwd</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>passwd username
+</code></pre></div></div>
+
+<h3 id="switch-user">switch user</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su username
+</code></pre></div></div>
+
+<p>and</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exit
+</code></pre></div></div>
+
+<p>Will be back to the root user.</p>
+
+<h3 id="sudo-user-access-to-visit-file">sudo user access to visit file</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat /var/log/auth.log
+</code></pre></div></div>
+
+<p>It will go for <code class="highlighter-rouge">permission denied</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo !!
+</code></pre></div></div>
+
+<p>or</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo cat /var/log/auth.log
+</code></pre></div></div>
+
+<h3 id="ssh-with-the-just-created-user">ssh with the just created user</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh username@128.199.166.66
+</code></pre></div></div>
+
+<p>If the console reports <code class="highlighter-rouge">permission denied (publickey)</code>, please do following:</p>
+
+<ol>
+  <li>Open the ssh config
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /etc/ssh/sshd_config
+</code></pre></div>    </div>
+  </li>
+  <li>Modify below config
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UsePAM yes
+IgnoreUserKnownHosts no
+PasswordAuthentication no
+</code></pre></div>    </div>
+    <p>to</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UsePAM no
+IgnoreUserKnownHosts no
+PasswordAuthentication yes
+</code></pre></div>    </div>
+    <p>and save the change</p>
+  </li>
+  <li>restart ssh service
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service ssh restart
+</code></pre></div>    </div>
+    <p>Problem resolved!
+Let’s ssh again and login to the server now.
+But watch out, login server via the pwd is dangerous. Let introduce a much safer way below.</p>
+  </li>
+</ol>
+
+<h3 id="ssh-server-only-with-private-key">ssh server only with private key</h3>
+
+<p>It is much better secure comparing to just pwd.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat my_key.pub | ssh username@128.199.166.66 "mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys"
+</code></pre></div></div>
+
+<p>What did these lines do?</p>
+
+<ol>
+  <li>print public key</li>
+  <li>ssh to the server with the username</li>
+  <li>try to create <code class="highlighter-rouge">.ssh</code> folder</li>
+  <li>copy public key content to the <code class="highlighter-rouge">authorized_keys</code> file</li>
+</ol>
+
+<p>And it might ask about the pwd.</p>
+
+<p>Juts type in and hit enter.</p>
+
+<p>Now login without pwd.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh username@128.199.166.66
+</code></pre></div></div>
+
+<h3 id="disabled-root-auth-and-password-auth-for-security">Disabled root auth and password auth for security</h3>
+
+<ol>
+  <li>open the sshd_config
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vim /etc/ssh/sshd_config
+</code></pre></div>    </div>
+  </li>
+  <li>change below two configs
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PermitRootLogin yes
+PasswordAuthentication yes
+</code></pre></div>    </div>
+    <p>to</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PermitRootLogin no
+PasswordAuthentication no
+</code></pre></div>    </div>
+    <p>Save the changes and quit</p>
+  </li>
+  <li>restart the service
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service ssh restart
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h1 id="domain">Domain</h1>
+
+<ol>
+  <li>buy a domain name. Of course!</li>
+  <li>setup 2 <code class="highlighter-rouge">A Record</code>. That means:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Type: choose 'A Record'
+Host: one is '@', another is 'www'
+value: 128.199.166.66
+</code></pre></div>    </div>
+  </li>
+  <li>check the domain is mapping correctly
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nslookup domain.com
+</code></pre></div>    </div>
+    <p>It will list the domain info.</p>
+  </li>
+</ol>
+
+<h1 id="prepare-the-server---nginx">Prepare the server - Nginx</h1>
+
+<ol>
+  <li>ssh to the server. Of course!</li>
+  <li>install Nginx
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install nginx
+</code></pre></div>    </div>
+  </li>
+  <li>start the service
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service nginx start
+</code></pre></div>    </div>
+    <p>Go and verify it via the domain or ip address</p>
+  </li>
+  <li>check the config
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat /etc/nginx/sites-available/default
+</code></pre></div>    </div>
+    <p>or</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>less /etc/nginx/sites-available/default
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h1 id="prepare-the-environment">Prepare the environment</h1>
+
+<ol>
+  <li>install git
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+</code></pre></div>    </div>
+  </li>
+  <li>install nodejs and npm(And yes! NodeJs please. Not node!!!)
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install nodejs npm
+</code></pre></div>    </div>
+  </li>
+  <li>Type <code class="highlighter-rouge">node -v</code> and see whether the env is in the node env.
+If it is not working, symlink <code class="highlighter-rouge">nodejs</code> to <code class="highlighter-rouge">node</code> using
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ln -s /usr/bin/nodejs /usr/bin/node
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h1 id="setup-www-folder">Setup <code class="highlighter-rouge">www</code> folder</h1>
+
+<ol>
+  <li>Type below command.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir -p /var/www
+</code></pre></div>    </div>
+  </li>
+  <li>Change ownership from <code class="highlighter-rouge">root</code> to the choose user</li>
+</ol>
+
+<p>Before that, let’s see who is the owner of the folder.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -l /path/to/file/or/folder
+</code></pre></div></div>
+
+<p>Then.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R $USER:$USER /var/www
+</code></pre></div></div>
+<p>or specify user and group</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R username:usergroup /var/www
+</code></pre></div></div>
+<p>Be careful with this command and only use it when the user really need the all the permission to one folder.</p>
+
+<ol>
+  <li>Cleanup the unused folders
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rmdir tmp tmp2
+</code></pre></div>    </div>
+    <p>or</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rmdir tmp*
+</code></pre></div>    </div>
+  </li>
+  <li>Correct the folder name
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv incorrectname correctname
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h1 id="running-the-app-automatically">Running the app automatically</h1>
+
+<p>pm2, nodemon, forever…
+Choose one and follow the instructions.</p>
+:ET

@@ -1,0 +1,53 @@
+I"'<p>Once the user exits the system, do multiple clear functions called still?</p>
+
+<p>For example, the state of the user and his/hers cats needs to be flushed during the logout process.
+The code would be:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const usersDefaultState = [];
+const users = (state = usersDefaultState, { type, payload }) =&gt; {
+  switch (type) {
+    case "RESET_USER":
+      return usersDefaultState;
+    case "ADD_USER":
+      return [...state, payload];
+    default:
+      return state;
+  }
+};
+
+const catsDefaultState = [];
+const cats = (state = catsDefaultState, { type, payload }) =&gt; {
+  switch (type) {
+    case "RESET_CATS":
+      return catsDefaultState;
+    case "ADD_CATS":
+      return [...state, payload];
+    default:
+      return state;
+  }
+};
+</code></pre></div></div>
+
+<p>Regarding DRY principle, is it possible to reset the redux state using the root reducer?
+The answer is yes.
+Let’s checkout the code:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// configureStore.js
+const appReducer = createAppReducer();
+
+const rootReducer = (state, action) =&gt; {
+  let currentState = state;
+
+  if (action.type === 'LOGOUT_SUCCEEDED') {
+    currentState = undefined;
+  }
+
+  return appReducer(currentState, action);
+};
+
+// Execute it in saga
+yield put({ type: 'LOGOUT_SUCCEEDED' });
+</code></pre></div></div>
+
+<p>Additionally, the isolation clear actions can still exit in each reducer.
+The Redux state can be cleaned up partially and entirely.
+<!--more--></p>
+:ET
