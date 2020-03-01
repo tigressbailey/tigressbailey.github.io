@@ -42,8 +42,8 @@ Without further ado, let's get started:
       server {
         listen       3000 ssl;
         ssl                  on;
-        ssl_certificate      /Users/bzhang2/.localhost-ssl/localhost.crt;
-        ssl_certificate_key  /Users/bzhang2/.localhost-ssl/localhost.key;
+        ssl_certificate      /Users/username/.localhost-ssl/localhost.crt;
+        ssl_certificate_key  /Users/username/.localhost-ssl/localhost.key;
         ssl_ciphers          HIGH:!aNULL:!MD5;
         server_name  localhost;
 

@@ -211,7 +211,7 @@ Juts type in and hit enter.
 Now login without pwd.
 
 ```
-ssh username@128.199.166.66
+ssh -i ~/.ssh/my_key -p 1234 username@128.199.166.66
 ```
 
 ### Disabled root auth and password auth for security
