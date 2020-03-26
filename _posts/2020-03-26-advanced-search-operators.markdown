@@ -32,7 +32,7 @@ I will list my collection and hope it helps!
 
 - site:
   ```
-  site:eloquentpoker.com
+  site:stackoverflow.com
   ```
 
 - -allinurl: and -inurl:
