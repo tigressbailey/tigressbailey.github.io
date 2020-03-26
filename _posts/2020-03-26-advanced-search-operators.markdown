@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Advanced Google Search"
+title: "Advanced Search Operators"
 date: 2020-03-26T09:26:34+08:00
 author: tigressbailey
 sitemap: false
@@ -10,7 +10,7 @@ description: ""
 
 As an efficient developer, it is quite important to get the precise knowledge and learn.
 
-Google search operators can be used in this case.
+Search operators can be used in this case.
 
 I will list my collection and hope it helps!
 
