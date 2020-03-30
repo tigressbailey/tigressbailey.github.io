@@ -82,9 +82,9 @@ This could help to assign the sudoers to root.
 
 ## Sync files between local machine and the remote server.
 ```
-scp -r -P 12345 /local_folder_path username@123.123.123.123:/remote_folder_path
+scp -r -i ~/.ssh/private_key -P 12345 username@123.123.123.123:/remote_folder_path /local_folder_path
 
-scp -r username@123.123.123.123:~/remote_folder_path /local_folder_path
+scp -r -i ~/.ssh/private_key -P 12345 /local_folder_path username@123.123.123.123:/remote_folder_path
 ```
 
 ## nmap the ports
