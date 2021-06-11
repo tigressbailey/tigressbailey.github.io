@@ -49,5 +49,21 @@ Just remember below points, it is never going to make any troubles in future.
    }
    ```
 
+4. In safari, it has a specific bug that if a sticky element is the direct child of the container:
+   ```HTML
+   <ScrollContainer>
+      <StickyItem />
+   </ScrollContainer>
+   ```
 
+   The `StickyItem` can only be sticky in one page width/height.
+
+   To resolve this issue, downgrade the `StickyItem` as the grandchild of the container:
+   ```HTML
+   <ScrollContainer>
+      <ScrollContent>
+        <StickyItem />
+      </ScrollContent>
+   </ScrollContainer>
+   ```
 <!--more-->
