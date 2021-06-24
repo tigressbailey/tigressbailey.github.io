@@ -90,8 +90,9 @@ const [roomNumber, setRoomNumber] = useState<RoomNumber>(defaultRoomNumber)
 
 const clickHandler = (roomType: RoomType) => {
   fetchRoomNumber().then(() => {
-    setLoadingDisabled(disabled => !disabled) // Re-render
-    setRoomNumber(roomNumber => roomNumber + 1) // Re-render
+    setLoadingDisabled(disabled => !disabled) // Before React 18: Re-render
+    setRoomNumber(roomNumber => roomNumber + 1) // Before React 18: Re-render
+    // React 18: Re-render once
   })
 }
 ```
