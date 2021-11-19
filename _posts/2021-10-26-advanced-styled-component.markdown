@@ -55,6 +55,22 @@ const Content = ({ title, children }) => {
 --- styled.ts
 ```
 
+### Add style to an existing component
+
+```JavaScript
+import { Card } from 'component-library'
+
+export const CardWrap = styled(Card)`
+  margin: 40px 32px;
+  padding: 24px 0;
+  box-shadow: none;
+  border: 1px solid ${colorGrayScaleNormal};
+
+  .ant-card-body {
+    padding: 0;
+  }
+`
+```
 
 ### Multiple styled components over Single styled components
 There are two ends of a spectrum for approaches when using Styled Components. It's important to know that this is a spectrum, and I will show two extreme versions of it, because after all there are many more liberal approaches in between.
