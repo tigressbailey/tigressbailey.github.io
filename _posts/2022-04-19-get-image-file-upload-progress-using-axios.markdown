@@ -3,7 +3,7 @@ layout: post
 title: "Get Image/file Upload Progress Using Axios"
 date: 2022-04-19T16:13:29+08:00
 author: tigressbailey
-sitemap: false
+sitemap: true
 keywords: ""
 description: ""
 ---
