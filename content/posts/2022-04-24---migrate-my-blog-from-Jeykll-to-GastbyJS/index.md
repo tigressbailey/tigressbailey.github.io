@@ -1,5 +1,5 @@
 ---
-title: Migrate my blog from Jekyll to GatsbyJS
+title: Migrate my blog from Jekyll to GatsbyJS and life
 date: "2022-04-24T22:40:32.169Z"
 template: "post"
 draft: false
@@ -8,6 +8,7 @@ category: "Frontend"
 tags:
   - "Frontend"
   - "Web Development"
+  - "Life"
 description: ""
 # socialImage: "/media/42-line-bible.jpg"
 socialImage: ""
@@ -18,7 +19,7 @@ It is quite popular and convenient.
 
 As I've build a GatsbyJS site for my company last year, I've decided to migrate from Jekyll to GatsbyJS.
 
-The only key step is to migrate the content from the `_posts` folder to `content/posts` folder.
+The only key point is to migrate the content from the `_posts` folder to `content/posts` folder.
 
 Gatsby enables developers to build fast, secure, and powerful websites using a React-based framework and innovative data layer that makes integrating different content, APIs, and services into one web experience incredibly simple.
 
@@ -49,6 +50,20 @@ The use of GatsbyJs enables our websites to harness a lot of optimization techni
 And Graphql, it support Graphql natively and quite easy to use.
 
 From my perspective, GatsbyJS is a great framework for building static websites.
+
+---
+
+I've been working remotely over 1 year.
+
+I just feel this is really legit for me.
+
+I spend more time with my family, and all the energies and inspirations are increasing in my head and body.
+
+I learn Flutter early this year and successfully build a feature using it.
+
+And I plan to learn more Web 3.0 technologies like Ether.js, Web3.js, Truffle, Solidity, and more.
+
+---
 
 Attached some screenshots of my old website for memorization.
 
