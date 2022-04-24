@@ -1,0 +1,46 @@
+{
+  "title": "Blog by Bailey Zhang",
+  "url": "https://tigressbailey.github.io",
+  "subtitle": "Frontend development technique and life.",
+  "copyright": "© All rights reserved.",
+  "googleAnalyticsId": "UA-128279645-1",
+  "disqusShortname": "",
+  "postsLimit": 4,
+  "pathPrefix": "/",
+  "menu": [
+    {
+      "label": "✍ Articles",
+      "path": "/"
+    },
+    {
+      "label": "👀 About me",
+      "path": "/pages/about"
+    },
+    {
+      "label": "Contact me",
+      "path": "/pages/contacts"
+    }
+  ],
+  "author": {
+    "name": "Bailey Zhang",
+    "photo": "/avatar.jpeg",
+    "bio": "Personal blog. I Share frontend development technique and life.",
+    "contacts": {
+      "rss": "",
+      "email": "tigressbailey@gmail.com",
+      "github": "tigressbailey",
+      "facebook": "",
+      "telegram": "",
+      "twitter": "",
+      "linkedin": "bailey-zhang",
+      "instagram": "",
+      "line": "",
+      "weibo": "",
+      "gitlab": "",
+      "medium": "",
+      "youtube": "",
+      "codepen": "",
+      "soundcloud": ""
+    }
+  }
+}
