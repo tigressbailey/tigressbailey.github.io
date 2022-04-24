@@ -13,7 +13,6 @@ description: ""
 socialImage: ""
 ---
 
-
 Axios is a library that makes it easy to make HTTP requests in JavaScript.
 
 We've got used to it for handling all kinds of HTTP requests.
@@ -26,7 +25,7 @@ Here is an example.
 Assuming Ant Design's upload component is used.
 
 ```js
-import { Upload } from 'antd'
+import { Upload } from "antd";
 
 <Upload
   accept="image/png,image/jpeg"
@@ -38,7 +37,7 @@ import { Upload } from 'antd'
   beforeUpload={beforeUpload}
 >
   <Label htmlFor="uploader">{icon}</Label>
-</Upload>
+</Upload>;
 ```
 
 The key method for the progress is `customRequest`.
@@ -46,40 +45,40 @@ Take a look at it.
 
 ```js
 const customRequest = async options => {
-  const { onSuccess, onError, file, onProgress } = options
-  const offlineId = `${uuidv4()}`
+  const { onSuccess, onError, file, onProgress } = options;
+  const offlineId = `${uuidv4()}`;
 
   submitMessage(
     { type: SPINNER_ACTION, comment: getProgressText(0) },
-    offlineId
-  )
+    offlineId,
+  );
   const config = {
     onUploadProgress: ({ loaded, total }) => {
-      const percent = Math.round((loaded * 100) / total)
+      const percent = Math.round((loaded * 100) / total);
       if (percent !== 100) {
-        onProgress({ percent })
+        onProgress({ percent });
         submitMessage(
           { type: SPINNER_ACTION, comment: getProgressText(percent) },
-          offlineId
-        )
+          offlineId,
+        );
       }
     },
-  }
+  };
 
   try {
-    const result = await fileUploadRequest(file, config)
+    const result = await fileUploadRequest(file, config);
 
     submitMessage(
       { type: SPINNER_ACTION, comment: getProgressText(100) },
-      offlineId
-    )
-    onSuccess('Ok')
-    result && uploadSuccess(result, offlineId)
+      offlineId,
+    );
+    onSuccess("Ok");
+    result && uploadSuccess(result, offlineId);
   } catch (err) {
-    removeMessage(offlineId)
-    onError({ err })
+    removeMessage(offlineId);
+    onError({ err });
   }
-}
+};
 ```
 
 The config object defines the progress callback and it would be used inside the Axios `PUT` request.
@@ -87,24 +86,25 @@ The config object defines the progress callback and it would be used inside the 
 ```js
 export const fileUploadRequest = async (
   file: File,
-  config: { onUploadProgress: (ProgressEvent) => void }
+  config: { onUploadProgress: ProgressEvent => void },
 ): Promise<ResponseData> => {
-  const res = await post<ResponseData>(
-    `/upload_api`,
+  const res =
+    (await post) <
+    ResponseData >
+    (`/upload_api`,
     {
-      folder: 'example',
+      folder: "example",
       filename: file.name,
       contentType: file.type,
-    }
-  ).then(res => res.data)
+    }).then(res => res.data);
 
   await Axios.put(res.url, file, {
     headers: res.headers,
     ...config,
-  })
+  });
 
-  return res
-}
+  return res;
+};
 ```
 
 In this function, we create a file record first.

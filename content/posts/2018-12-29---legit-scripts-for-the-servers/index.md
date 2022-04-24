@@ -80,6 +80,7 @@ ssh -i ~/.ssh/ my_key root@128.199.166.66
 ```
 top
 ```
+
 htop is better one than just top
 
 #### htop
@@ -117,6 +118,7 @@ usermod -aG sudo username
 ```
 
 ### Confirm the group is assigned
+
 ```
 id -G -n username
 ```
@@ -170,26 +172,33 @@ ssh username@128.199.166.66
 If the console reports `permission denied (publickey)`, please do following:
 
 1. Open the ssh config
+
 ```
 vim /etc/ssh/sshd_config
 ```
+
 2. Modify below config
+
 ```
 UsePAM yes
 IgnoreUserKnownHosts no
 PasswordAuthentication no
 ```
+
 to
+
 ```
 UsePAM no
 IgnoreUserKnownHosts no
 PasswordAuthentication yes
 ```
-and save the change
-3. restart ssh service
+
+and save the change 3. restart ssh service
+
 ```
 service ssh restart
 ```
+
 Problem resolved!
 Let's ssh again and login to the server now.
 But watch out, login server via the pwd is dangerous. Let introduce a much safer way below.
@@ -222,21 +231,27 @@ ssh -i ~/.ssh/my_key -p 1234 username@128.199.166.66
 ### Disabled root auth and password auth for security
 
 1. open the sshd_config
+
 ```
 sudo vim /etc/ssh/sshd_config
 ```
+
 2. change below two configs
+
 ```
 PermitRootLogin yes
 PasswordAuthentication yes
 ```
+
 to
+
 ```
 PermitRootLogin no
 PasswordAuthentication no
 ```
-Save the changes and quit
-3. restart the service
+
+Save the changes and quit 3. restart the service
+
 ```
 sudo service ssh restart
 ```
@@ -245,35 +260,44 @@ sudo service ssh restart
 
 1. buy a domain name. Of course!
 2. setup 2 `A Record`. That means:
+
 ```
 Type: choose 'A Record'
 Host: one is '@', another is 'www'
 value: 128.199.166.66
 ```
+
 3. check the domain is mapping correctly
+
 ```
 nslookup domain.com
 ```
-It will list the domain info.
 
+It will list the domain info.
 
 # Prepare the server - Nginx
 
 1. ssh to the server. Of course!
 2. install Nginx
+
 ```
 sudo apt-get install nginx
 ```
+
 3. start the service
+
 ```
 sudo service nginx start
 ```
-Go and verify it via the domain or ip address
-4. check the config
+
+Go and verify it via the domain or ip address 4. check the config
+
 ```
 cat /etc/nginx/sites-available/default
 ```
+
 or
+
 ```
 less /etc/nginx/sites-available/default
 ```
@@ -281,16 +305,20 @@ less /etc/nginx/sites-available/default
 # Prepare the environment
 
 1. install git
+
 ```
 sudo apt-get install git
 ```
 
 2. install nodejs and npm(And yes! NodeJs please. Not node!!!)
+
 ```
 sudo apt-get install nodejs npm
 ```
+
 3. Type `node -v` and see whether the env is in the node env.
-If it is not working, symlink `nodejs` to `node` using
+   If it is not working, symlink `nodejs` to `node` using
+
 ```
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
@@ -298,6 +326,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 # Setup `www` folder
 
 1. Type below command.
+
 ```
 sudo mkdir -p /var/www
 ```
@@ -305,30 +334,39 @@ sudo mkdir -p /var/www
 2. Change ownership from `root` to the choose user
 
 Before that, let's see who is the owner of the folder.
+
 ```
 ls -l /path/to/file/or/folder
 ```
 
 Then.
+
 ```
 sudo chown -R $USER:$USER /var/www
 ```
+
 or specify user and group
+
 ```
 sudo chown -R username:usergroup /var/www
 ```
+
 Be careful with this command and only use it when the user really need the all the permission to one folder.
 
 3. Cleanup the unused folders
+
 ```
 rmdir tmp tmp2
 ```
+
 or
+
 ```
 rmdir tmp*
 ```
 
 4. Correct the folder name
+
 ```
 mv incorrectname correctname
 ```

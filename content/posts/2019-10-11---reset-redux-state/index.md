@@ -17,6 +17,7 @@ Once the user exits the system, do multiple clear functions called still?
 
 For example, the state of the user and his/hers cats needs to be flushed during the logout process.
 The code would be:
+
 ```
 const usersDefaultState = [];
 const users = (state = usersDefaultState, { type, payload }) => {
@@ -46,6 +47,7 @@ const cats = (state = catsDefaultState, { type, payload }) => {
 Regarding DRY principle, is it possible to reset the redux state using the root reducer?
 The answer is yes.
 Let's checkout the code:
+
 ```
 // configureStore.js
 const appReducer = createAppReducer();

@@ -14,6 +14,7 @@ socialImage: ""
 ---
 
 ### Tuples
+
 Both tuples and records have the same syntax. They can be defined by using a # prefix in front of objects and arrays, like so:
 
 ```JavaScript
@@ -59,6 +60,7 @@ tuples.map(tuple => new Button(tuple));
 ---
 
 ### Records
+
 Just like tuples, records are also denoted by a hash:
 
 ```JavaScript
@@ -70,6 +72,7 @@ const record = #{
     tuple: #['🍄', '🍅', '🥕'] // Records can also contain tuples
 };
 ```
+
 When working with records, you also need to keep in mind some rules:
 
 You cannot use the `__proto__` identifier in records

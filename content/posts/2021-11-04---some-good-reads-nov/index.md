@@ -15,4 +15,3 @@ socialImage: ""
 
 - [Client-Side Architecture Basics](https://khalilstemmler.com/articles/client-side-architecture/introduction/)
 - [Mental models](https://www.julian.com/blog/mental-model-examples)
-

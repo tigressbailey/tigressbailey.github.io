@@ -19,32 +19,38 @@ Search operators can be used in this case.
 I will list my collection and hope it helps!
 
 - allintitle: and intitle:
+
   ```
   allintitle: ES2020
   intitle: ES2020
   ```
 
 - -exclusion
+
   ```
   allintitle: ES2020 -Private
   ```
 
 - "Terms"
+
   ```
   "JavaScript is the best language"
   ```
 
 - site:
+
   ```
   site:stackoverflow.com
   ```
 
 - -allinurl: and -inurl:
+
   ```
   site:mozilla.com -inurl:www
   ```
 
 - -site:
+
   ```
   site:github.com.\* -site:github.com
   ```
@@ -53,4 +59,3 @@ I will list my collection and hope it helps!
   ```
   site:github.com filetype:md
   ```
-

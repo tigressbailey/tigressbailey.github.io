@@ -26,18 +26,18 @@ Why did I say it less than 22kb? Because date-fns supports tree-shaking naturall
 Here are techniques:
 
 1. Technical selection
-   
-    [You-Dont-Need-Momentjs](https://github.com/you-dont-need/You-Dont-Need-Momentjs#brief-comparison)
 
-    This inspires me and provides the courage to me.
+   [You-Dont-Need-Momentjs](https://github.com/you-dont-need/You-Dont-Need-Momentjs#brief-comparison)
 
-    I struggled about choosing dayjs or date-fns.
+   This inspires me and provides the courage to me.
 
-    Both of them are great libraries. 
-    
-    According to [feature parity](https://github.com/you-dont-need/You-Dont-Need-Momentjs#feature-parity), date-fns has the same features comparing to moment.js, in which case, no workarounds and no 3rd parties are required for the replacement.
+   I struggled about choosing dayjs or date-fns.
 
-    So my selection is date-fns.
+   Both of them are great libraries.
+
+   According to [feature parity](https://github.com/you-dont-need/You-Dont-Need-Momentjs#feature-parity), date-fns has the same features comparing to moment.js, in which case, no workarounds and no 3rd parties are required for the replacement.
+
+   So my selection is date-fns.
 
 2. Replace moment formats with date-fns formats
    The formats indicate different outputs.
@@ -45,8 +45,7 @@ Here are techniques:
    Compare moment and date-fns and create alias between them would speed up the progress.
 
 3. Replace utils
-    [feature parity](https://github.com/you-dont-need/You-Dont-Need-Momentjs#feature-parity) covers 90% utils replacement.
-   
+   [feature parity](https://github.com/you-dont-need/You-Dont-Need-Momentjs#feature-parity) covers 90% utils replacement.
 4. Rebuild antd components
    Ant Design heavily use moment.js and moment-timezone library.
 
@@ -65,13 +64,14 @@ Here are techniques:
    ```
 
    It actually imports all locales from date-fns-tz in the rc-picker/lib/generate/dateFns file (https://github.com/react-component/picker/blob/dc21474ad9a7af81ba20f1445e4acdd6f746479b/src/generate/dateFns.ts#L26)
+
    ```Typescript
    import * as Locale from 'date-fns/locale'
    ```
 
    This is not as expected.
    I created our own generate/dateFns file instead.
-   
+
    ```Typescript
     import {
       getDay,
@@ -220,6 +220,7 @@ Here are techniques:
    For instance, we use a json schema form library and it uses them. I recreated the component and replace the moment.js as well.
 
 ---
+
 Part two - Happy new year!
 
 I hung out with my dearest friends last weekend.
@@ -240,5 +241,3 @@ Every time our BE fellows told me they are BFF(backend for frontend). I just wan
 I wish everyone a happy new year in advance.
 
 I will continue with English writing and include Flutter into my skill list next year.
-
-

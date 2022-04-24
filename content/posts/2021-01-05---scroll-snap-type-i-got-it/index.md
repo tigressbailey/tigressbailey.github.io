@@ -35,7 +35,7 @@ In order to enable this feature for swiping the entire page.
 
 `scroll-snap-align: start | center | end` is not required. From my experience, `start` performs more naturally than the others.
 
-If the child element content is longer than the parent content,  `proximity` could allow the user to navigate to the bottom of the content. Then the scrolling effect would work properly.
+If the child element content is longer than the parent content, `proximity` could allow the user to navigate to the bottom of the content. Then the scrolling effect would work properly.
 
 ```HTML
 <main class="container">
@@ -123,7 +123,8 @@ If the child element content is longer than the parent content,  `proximity` cou
 }
 ```
 
-####  Reference:
+#### Reference:
+
 [Scroll Story](https://css-tricks.com/newsletter/232-scroll-story/)
 
 [Log rocket - how to use css scroll snap](https://blog.logrocket.com/how-to-use-css-scroll-snap/)

@@ -37,4 +37,3 @@ Well, previously, I am not a business owner but I certainly had a tremendous con
 It was a good turnaround and the major job turns into controlling the product timeline expectation.
 
 Goodbye, mini water fall. And hello, extreme programming.
-

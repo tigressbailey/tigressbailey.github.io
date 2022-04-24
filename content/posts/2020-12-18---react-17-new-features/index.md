@@ -28,6 +28,7 @@ In React 16 and earlier, React would do document.addEventListener() for most eve
 To access the event in an async function, React 17 would keep the synthetic event instead of removing it. The `e.persist()` is no need.
 
 Before
+
 ```JavaScript
 function handleChange(e) {
   e.persist()
@@ -46,6 +47,7 @@ onKeyUp={e => {
 ```
 
 After
+
 ```JavaScript
 function handleChange(e) {
   setData(data => ({
@@ -70,6 +72,7 @@ Upgrading to the new transform is completely optional, but it has a few benefits
 - It will enable future improvements that reduce the number of concepts you need to learn React.
 
 From
+
 ```JavaScript
 import React from 'react';
 
@@ -77,7 +80,7 @@ function App() {
   return <h1>Hello World</h1>;
 }
 
-/*  
+/*
 Above will be transfer to:
 function App() {
   return React.createElement('h1', null, 'Hello world');
@@ -86,12 +89,15 @@ function App() {
 ```
 
 To
+
 ```JavaScript
 function App() {
   return <h1>Hello World</h1>;
 }
 ```
-It will be compiled to 
+
+It will be compiled to
+
 ```JavaScript
 // Inserted by a compiler (don't import it yourself!)
 import {jsx as _jsx} from 'react/jsx-runtime';

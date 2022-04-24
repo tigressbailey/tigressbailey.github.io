@@ -22,8 +22,6 @@ To contribute the community, that feels good.
 
 Keep code simple, beautiful and readable are my lines. I consider this addon as a handy tool and the code has good readability.
 
-
 I'll continue this as lots of things can inspire me all the time.
 
 Please feel free to try it at [https://tigressbailey.github.io/ember-cli-page-progress/](https://tigressbailey.github.io/ember-cli-page-progress/)
-

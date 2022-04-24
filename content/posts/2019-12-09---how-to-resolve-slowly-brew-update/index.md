@@ -19,14 +19,18 @@ So, here comes the solution.
 
 1. Set up a Socks5 proxy.
 2. Open the bask profile or .zshrc. I'm using ZSH, so:
+
 ```
 vi $HOME/.zshrd
 ```
+
 3. Add the proxy and unproxy command into the file. For example, the socks5 URL is 127.0.0.1:1081.
+
 ```
 alias proxy='export all_proxy=socks5://127.0.0.1:1081'
 alias unproxy='unset all_proxy'
 ```
+
 4. Save and `source $HOME/.zshrc`
 
 Now, use `proxy && brew update && unproxy` is resolved my problem.

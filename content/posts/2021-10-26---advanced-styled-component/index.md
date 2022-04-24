@@ -20,7 +20,9 @@ CSS-in-JS is great at making CSS work for the JS-minded, and I would recommend i
 Form my perspective, it just works great with component.
 
 ### File Structure
+
 The styles can be placed:
+
 1. Inside the component tsx file
 2. In the same level of the component file
 3. Common styles can be wrapped in the parent level
@@ -35,7 +37,7 @@ The styles can be placed:
 
 /**
   - FormSection/
-  --- index.tsx 
+  --- index.tsx
   For instance:
 **/
 
@@ -43,7 +45,7 @@ The styles can be placed:
 const Headline = styled.h1`
   color: red;
 `;
- 
+
 const Content = ({ title, children }) => {
   return (
     <section>
@@ -78,13 +80,15 @@ export const CardWrap = styled(Card)`
 ```
 
 ### Multiple styled components over Single styled components
+
 There are two ends of a spectrum for approaches when using Styled Components. It's important to know that this is a spectrum, and I will show two extreme versions of it, because after all there are many more liberal approaches in between.
 
 On the left side of the spectrum, there is the approach when everything with style becomes a styled component. Thus every styled component is responsible for its style.
 
 Usually this is the most popular approach and I think it's mostly because developers have a greater acceptance of JavaScript over CSS. Thus using only styled components without the need for CSS classes or CSS selectors keeps it simpler. In addition, it supports the mental mindset of "everything is a component".
 
-Attention: 
+Attention:
+
 1. It would be fine to use single styled components and override ant design classes.
 2. It would be fine to use single styled components and custom classes when it depends on the React refs.
 
@@ -94,20 +98,20 @@ const Section = styled.section`
   border-bottom: 1px solid grey;
   padding: 20px;
 `;
- 
+
 const Headline = styled.h1`
   color: red;
 `;
- 
+
 const Text = styled.span`
   padding: 10px;
 `;
- 
+
 const Content = ({ title, children }) => {
   return (
     <Section>
       <Headline>{title}</Headline>
- 
+
       <Text>{children}</Text>
     </Section>
   );
@@ -117,21 +121,21 @@ const Content = ({ title, children }) => {
 const Container = styled.section`
   border-bottom: 1px solid grey;
   padding: 20px;
- 
+
   h1 {
     color: red;
   }
- 
+
   .text {
     padding: 10px;
   }
 `;
- 
+
 const Content = ({ title, children }) => {
   return (
     <Container>
       <h1>{title}</h1>
- 
+
       <span className="text">{children}</span>
     </Container>
   );
@@ -139,45 +143,46 @@ const Content = ({ title, children }) => {
 ```
 
 ### CSS snippet
+
 Avoid Semicolons when using the snippet.
 
 ```JavaScript
 // Yep
 import styled, { css } from 'styled-components';
- 
+
 const red = css`
   color: red;
 `;
- 
+
 const Headline = styled.h1`
   ${red}
- 
+
   font-size: 20px;
 `;
- 
+
 const Text = styled.p`
   ${red}
- 
+
   font-size: 16px;
 `;
 
 
 // Nope
 import styled, { css } from 'styled-components';
- 
+
 const red = css`
   color: red;
 `;
- 
+
 const Headline = styled.h1`
   ${red};
- 
+
   font-size: 20px;
 `;
- 
+
 const Text = styled.p`
   ${red};
- 
+
   font-size: 16px;
 `;
 
@@ -239,5 +244,3 @@ export const MenuProductCover = styled.div<{ src?: string }>`
   background-position: center;
 `
 ```
-
-

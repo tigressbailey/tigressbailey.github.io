@@ -26,13 +26,13 @@
     "lint:staged": "lint-staged",
     "lint:ts": "eslint \"src\" --ext .tsx,.ts && prettier --check .",
     "prepare": "husky install",
+    "refresh": "curl -X POST http://localhost:8000/__refresh",
     "semantic-release": "semantic-release",
     "serve": "gatsby serve",
     "start": "npm run clean && ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop",
     "test": "jest --config ./internal/testing/jest-config.ts",
     "test:coverage": "jest --coverage --config ./internal/testing/jest-config.ts",
-    "test:watch": "jest --watch --config ./internal/testing/jest-config.ts",
-    "refresh": "curl -X POST http://localhost:8000/__refresh"
+    "test:watch": "jest --watch --config ./internal/testing/jest-config.ts"
   },
   "commitlint": {
     "extends": [

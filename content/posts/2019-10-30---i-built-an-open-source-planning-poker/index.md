@@ -19,9 +19,11 @@ This side project is for my dearest colleagues and the public.
 - Project homepage
 
   <https://github.com/tigressbailey/eloquent-poker>
+
 - Try it out
 
   <https://eloquentpoker.com/?room=Jungle&name=Yourname>
+
 - Give me feedback
 
   <https://github.com/tigressbailey/eloquent-poker/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc>

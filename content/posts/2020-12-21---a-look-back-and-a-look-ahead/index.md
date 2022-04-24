@@ -12,7 +12,6 @@ description: ""
 socialImage: ""
 ---
 
-
 2020 is about to come to an end.
 
 I'm not a person who summarized every year and planned every year.
@@ -31,24 +30,24 @@ To be a problem solver, let's have a quick summary for the contributions to my p
 1. Apply online debugging ability to the production environment using the hidden sourcemap.
 1. Apply Proper logger using Sentry platform.
 1. Apply agile process to different production lines and quantify the critical indexes.
-1. Reduce bundle size as attached. 
+1. Reduce bundle size as attached.
 
-    - Bundle names and sizes before optimization:
-    ![Bundle names and sizes before optimization](/images/2020-12-21-bundle-size-before.png)
+   - Bundle names and sizes before optimization:
+     ![Bundle names and sizes before optimization](/images/2020-12-21-bundle-size-before.png)
 
-    - Bundle names and sizes after optimization:
-    ![Bundle names and sizes after optimization](/images/2020-12-21-bundle-size-after.png)
+   - Bundle names and sizes after optimization:
+     ![Bundle names and sizes after optimization](/images/2020-12-21-bundle-size-after.png)
 
-    - Published form bundle sizes before optimization:
-    ![Published form sizes before optimization](/images/2020-12-21-published-form-before.png)
+   - Published form bundle sizes before optimization:
+     ![Published form sizes before optimization](/images/2020-12-21-published-form-before.png)
 
-    - Published form bundle sizes after optimization:
-    ![Published form sizes after optimization](/images/2020-12-21-published-form-after.png)
+   - Published form bundle sizes after optimization:
+     ![Published form sizes after optimization](/images/2020-12-21-published-form-after.png)
 
-    One of the entries' visual comparison can be found at [https://github.com/tigressbailey/performance-comparison/blob/master/form_visual_comparison.mp4](https://github.com/tigressbailey/performance-comparison/blob/master/form_visual_comparison.mp4) 
+   One of the entries' visual comparison can be found at [https://github.com/tigressbailey/performance-comparison/blob/master/form_visual_comparison.mp4](https://github.com/tigressbailey/performance-comparison/blob/master/form_visual_comparison.mp4)
 
 1. Continuously reduce bug rate as attached.
-    ![Continuously reduce bug rate](/images/2020-12-21-bug-rate.png)
+   ![Continuously reduce bug rate](/images/2020-12-21-bug-rate.png)
 
 1. Interviewed almost 10 engineers including junior levels and senior levels.
 

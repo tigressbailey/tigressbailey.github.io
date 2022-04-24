@@ -22,11 +22,11 @@ Some gotchas come along with it as well.
 Just remember below points, it is never going to make any troubles in future.
 
 1. It won't work if it is the only element inside the container.
-   
+
    In another word, it should be sticky comparing to the siblings in the same level.
 
 2. It won't work if any parent level container is set `overflow: auto/hidden/scroll`.
-   
+
    Well, set a fixed height would solve this problem.
 
    ```CSS
@@ -55,6 +55,7 @@ Just remember below points, it is never going to make any troubles in future.
    ```
 
 4. In safari, it has a specific bug that if a sticky element is the direct child of the container:
+
    ```HTML
    <ScrollContainer>
       <StickyItem />
@@ -64,6 +65,7 @@ Just remember below points, it is never going to make any troubles in future.
    The `StickyItem` can only be sticky in one page width/height.
 
    To resolve this issue, downgrade the `StickyItem` as the grandchild of the container:
+
    ```HTML
    <ScrollContainer>
       <ScrollContent>

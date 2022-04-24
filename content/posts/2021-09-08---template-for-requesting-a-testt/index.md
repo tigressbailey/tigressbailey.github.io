@@ -14,20 +14,23 @@ socialImage: ""
 ---
 
 ## Introduction
+
 This doc is for writing an appropriate testing request message for features.
 
 It would help QA to acknowledge the testing scope and start testing smoothly.
 
 ## Targeting user
+
 Frontend Engineer/QA/PM
 
 ## General Definitions
+
 [] - required
 
 () - optional
 
-
 ## Format
+
 [Who @Jane Doe]
 
 [What "Feature name"] is ready for testing/a test.
@@ -42,15 +45,15 @@ Scope:
 
 ("Describe the additional info")
 
-
 ## Example
+
 ```
 @Jane
 
 Account Manager is ready for a test.
 Entrance:
 https://global-staging.server-domian.com/account
-Scope: 
+Scope:
 Successful result of joint debugging
 screenshot or screen recording
 

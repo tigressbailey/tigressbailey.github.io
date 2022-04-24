@@ -156,68 +156,68 @@ align-self: start | end | center | stretch;
 
 ## POLYFILLS & FALLBACKS
 
--   Old spec:
-    [Grid-layout-polyfill](https://github.com/codler/Grid-Layout-Polyfill)
+- Old spec:
+  [Grid-layout-polyfill](https://github.com/codler/Grid-Layout-Polyfill)
 
--   New spec:
-    [CSS-grid-polyfill](https://github.com/FremyCompany/css-grid-polyfill)
+- New spec:
+  [CSS-grid-polyfill](https://github.com/FremyCompany/css-grid-polyfill)
 
--   @supports may help with all but IE browsers:
-    [@Supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
+- @supports may help with all but IE browsers:
+  [@Supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
 
--   Rachel Andrew: Grid "fallbacks" and overrides
-    [Cheat sheets](https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks)
+- Rachel Andrew: Grid "fallbacks" and overrides
+  [Cheat sheets](https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks)
 
 ## Resources
 
--   CSS Tricks: A Complete Guide to Grid
+- CSS Tricks: A Complete Guide to Grid
 
-    <https://css-tricks.com/snippets/css/complete-guide-grid/>
+  <https://css-tricks.com/snippets/css/complete-guide-grid/>
 
--   Grid by Example
+- Grid by Example
 
-    <http://gridbyexample.com/>
+  <http://gridbyexample.com/>
 
--   Practical CSS Grid: Adding Grid to an Existing Design
+- Practical CSS Grid: Adding Grid to an Existing Design
 
-    <https://alistapart.com/article/practical-grid>
+  <https://alistapart.com/article/practical-grid>
 
--   Basic concepts of grid layout
+- Basic concepts of grid layout
 
-    <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout>
+  <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout>
 
--   CSS Grid Inspector (in Firefox):
+- CSS Grid Inspector (in Firefox):
 
-    <https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts>
+  <https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts>
 
--   Grid "fallbacks" and overrides
+- Grid "fallbacks" and overrides
 
-    <https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks>
+  <https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks>
 
--   Things I’ve Learned About CSS Grid Layout
+- Things I’ve Learned About CSS Grid Layout
 
-    <https://css-tricks.com/things-ive-learned-css-grid-layout/>
+  <https://css-tricks.com/things-ive-learned-css-grid-layout/>
 
--   GRID PILE: Stacking CSS Grids for Impossible Layouts
+- GRID PILE: Stacking CSS Grids for Impossible Layouts
 
-    <https://www.linkedin.com/pulse/grid-pile-stacking-css-grids-impossible-layouts-rand-hendriksen/>
+  <https://www.linkedin.com/pulse/grid-pile-stacking-css-grids-impossible-layouts-rand-hendriksen/>
 
--   Breaking Down a CSS Grid Layout
+- Breaking Down a CSS Grid Layout
 
-    <http://csskarma.com/blog/css-grid-layout/>
+  <http://csskarma.com/blog/css-grid-layout/>
 
--   A Collection of Interesting Facts about CSS Grid Layout
+- A Collection of Interesting Facts about CSS Grid Layout
 
-    <https://css-tricks.com/collection-interesting-facts-css-grid-layout/>
+  <https://css-tricks.com/collection-interesting-facts-css-grid-layout/>
 
--   Is it really safe to start using CSS Grid Layout?
+- Is it really safe to start using CSS Grid Layout?
 
-    <https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/>
+  <https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/>
 
--   Bootstrap to CSS Grid
+- Bootstrap to CSS Grid
 
-    <https://medium.com/@tallys/bootstrap-to-css-grid-87b3f5f830e4>
+  <https://medium.com/@tallys/bootstrap-to-css-grid-87b3f5f830e4>
 
--   Firefox Developer version -- Grid tools
+- Firefox Developer version -- Grid tools
 
-    <https://mozilladevelopers.github.io/playground/03-firefox-devtools>
+  <https://mozilladevelopers.github.io/playground/03-firefox-devtools>

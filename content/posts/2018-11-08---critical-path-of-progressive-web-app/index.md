@@ -16,7 +16,7 @@ socialImage: ""
 Everyone has keen interests in Progressive Web App.
 I was wondering how can I explain it in a simple way.
 
-***
+---
 
 ## Progressive Metadata
 
@@ -73,7 +73,6 @@ I was wondering how can I explain it in a simple way.
 ```
 
 > You can use `fullscreen`, `standalone`, `minimal-ui`, `browser` for `display`. If the mobile browser doesn't support the `fullscreen`. It will degrade to `standalone`. This is a progressively feature.
-
 
 ## Home screen Icon
 

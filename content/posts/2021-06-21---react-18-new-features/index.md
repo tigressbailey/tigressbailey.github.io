@@ -14,8 +14,8 @@ description: ""
 socialImage: ""
 ---
 
-
 ## Transition
+
 Consider typing in an input field that filters a list of data. It needs to store the value of the field in state so that it can filter the data and control the value of that input field.
 
 ```JavaScript
@@ -117,7 +117,7 @@ const clickHandler = (roomType: RoomType) => {
     setLoadingDisabled(disabled => !disabled)
   })
   // Re-render
-  
+
   flushSync(() => {
     setRoomNumber(roomNumber => roomNumber + 1)
   })
@@ -129,14 +129,13 @@ const clickHandler = (roomType: RoomType) => {
 
 Basically, it just shortens the time to interactive during the SSR process.
 
-
 ## Adoption
 
 It is quite easy to upgrade React 18 as no breaking changes.
 
 Well , that's great because Next.js would definitely adopt it every soon and I just need to keep an eye on the npm modules and next configs.
 
---- 
+---
 
 Half year has passed since React 17 is released.
 
@@ -153,5 +152,3 @@ It recalls me that my friends said someone would steal and copy my idea once but
 Innovation lives with my blood and ready to blossom any time.
 
 To be humble and kind are much better than to be arrogant and cocky.
-
-

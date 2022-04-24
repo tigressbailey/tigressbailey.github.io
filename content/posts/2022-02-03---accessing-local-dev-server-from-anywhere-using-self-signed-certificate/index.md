@@ -14,6 +14,7 @@ socialImage: ""
 ---
 
 ## The prerequisites are:
+
 1. If you are working a research task or you need to let BE mate to look into some bugs during API integration.
 2. The code cannot be deployed to production or any other environment.
 3. You are working remotely and you need to allow colleagues access the local dev server from anywhere.
@@ -31,6 +32,7 @@ npm install -g localtunnel
 ```
 
 ### start localtunnel
+
 The local dev server is running on port 3000 with protocol `http`.
 
 ```bash
@@ -42,6 +44,7 @@ The local dev server can be accessed by `https://baileylocalalphatest.loca.lt/`.
 The protocol is `https`. Localtunnel would provide a certificate for you. This is really neat.
 
 ### Deal with self-signed certificate
+
 In most cases, our local dev servers' certificates are self-signed if it is using the CRA / NextJS.
 
 It would get a 502 error if you try to run the same command for `https://localhost:3000/`.
@@ -66,10 +69,8 @@ Happy hacking!
 
 ---
 
-
 I'm enjoying the family time during the Spring Festival.
 
 Happy the year of the tiger.
 
 So thrilled thatI've learned a few Flutter coding skills these days.
-

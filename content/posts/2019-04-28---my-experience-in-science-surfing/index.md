@@ -148,27 +148,23 @@ Certificates:
 
 ### Homebrew install
 
--   step 1: Add official tap
+- step 1: Add official tap
 
+  brew tap v2ray/v2ray
 
-    brew tap v2ray/v2ray
+- step 2: Install v2ray-core:
 
--   step 2: Install v2ray-core:
-
-
-    brew install v2ray-core
+  brew install v2ray-core
 
 ### Config path
 
--   step 1: edit the default config:
+- step 1: edit the default config:
 
+  vim /usr/local/etc/v2ray/config.json
 
-    vim /usr/local/etc/v2ray/config.json
+- step 2: run v2ray-core without starting at login.
 
--   step 2: run v2ray-core without starting at login.
-
-
-    brew services start v2ray-core
+  brew services start v2ray-core
 
 ### The config
 

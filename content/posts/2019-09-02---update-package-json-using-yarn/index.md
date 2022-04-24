@@ -20,6 +20,7 @@ I've tried tons of solutions using `yarn blablabla` with no luck.
 The ultimate spell is... `npm-check-updates` plus `yarn`.
 
 Here is the code:
+
 ```
 yarn global add npm-check-updates
 ncu -u

@@ -5,9 +5,9 @@ name: Bailey Zhang
 title: Keep Calm and Carry On
 email: tigressbailey@gmail.com
 author: tigressbailey
-baseurl: ''
-keywords: 'bailey zhang, tigressbailey'
-description: 'My name’s Bailey and I’m a frontend developer. I have experience making software, web app and website. I have worked at a number of companies gaining teamwork and leadership skills.'
+baseurl: ""
+keywords: "bailey zhang, tigressbailey"
+description: "My name’s Bailey and I’m a frontend developer. I have experience making software, web app and website. I have worked at a number of companies gaining teamwork and leadership skills."
 social_username: tigressbailey
 linkedin_username: bailey-zhang
 
@@ -15,10 +15,10 @@ linkedin_username: bailey-zhang
 sass:
   style: compressed
 markdown: kramdown
-encoding: 'utf-8'
+encoding: "utf-8"
 paginate: 10
 permalink: /post/:title
-paginate_path: '/page/:num/'
+paginate_path: "/page/:num/"
 
 # Plugins ...
 plugins:
