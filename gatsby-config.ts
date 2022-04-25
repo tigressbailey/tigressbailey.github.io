@@ -97,6 +97,7 @@ export default {
             options: {
               maxWidth: 960,
               withWebp: true,
+              wrapperStyle: "overflow:hidden; border-radius: 10px;",
             },
           },
           {
