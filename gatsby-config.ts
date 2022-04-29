@@ -185,10 +185,11 @@ export default {
       },
     },
     {
-      resolve: "@sentry/gatsby",
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        dsn: process.env.SENTRY_DSN,
-        tracesSampleRate: 1,
+        host: config.url,
+        sitemap: `${config.url}/sitemap.xml`,
+        policy: [{userAgent: "*", allow: "/"}],
       },
     },
     "gatsby-plugin-image",
@@ -196,5 +197,14 @@ export default {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-optimize-svgs",
     "gatsby-plugin-sass",
+        /*
+         * {
+         *   resolve: "@sentry/gatsby",
+         *   options: {
+         *     dsn: process.env.SENTRY_DSN,
+         *     tracesSampleRate: 1,
+         *   },
+         * },
+         */
   ],
 };
