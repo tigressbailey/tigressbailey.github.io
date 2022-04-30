@@ -13,16 +13,16 @@ Passionate about UX/UI and possess working knowledge of SDLC.
 ![](/coding-background.jpeg)
 ## Skills
 
-- **Programming**: JavaScript, TypeScript, HTML, CSS, NodeJS, Dart
-- **Architect**: Resilient Architecture, Web performance optimization, Internationalization, State Management, Design system, Coding Style, Restful API, Graphql, SDLC Definition, Security
-- **Libraries and frameworks**: React, Next.js, GatsbyJS, Flutter, React Native, Ember, Styled-Components, SASS, LESS
+- **Programming**: JavaScript, TypeScript, HTML, CSS, Node.js, Dart
+- **Architecture**: Resilient Architecture, Web performance optimization, Internationalization, State Management, Design system, Coding Style, Restful API, Graphql, SDLC Definition, Security
+- **Library&Framework**: React, Next.js, GatsbyJS, Flutter, React Native, Ember, Styled-Components, SASS, LESS, Theme-UI
 - **Infrastructure**: ESLint, StyleLint, React Testing Library, Jest, Mocha, Storybook, Lint-Staged, Husky, Conventional Commits, Webpack, Git, SVN, Github Actions, Jenkins, Gitlab CI, Semantic Versioning
-- **Management**: Problem-solving, Agile, XP, Collaboration, Hiring, Team motivation
-- **Collaboration**: JIRA, Confluence, Basecamp, Slack, Discord, Figma, Zeplin, Invision
+- **Management**: Problem-solving, Agile, XP, Adaptability, Collaboration, Patience, Time management
+- **Tool**: JIRA, Confluence, Basecamp, Slack, Discord, Figma, Zeplin, Invision
 
 ## Experience
 
-- **[Airhost](https://airhost.co/)**: Frontend Architect (Remote); (2021/01 - now)
+- **[Airhost](https://airhost.co/)**: Frontend Architect [Remote]; (2021/01 - now)
 
     - Designing enterprise architecture with architectural guidelines in mind;
     - Leading frontend technical development efforts independently, determining areas of complexity and potential risks to successful implementation of advanced web apps;
