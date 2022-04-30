@@ -7,7 +7,7 @@ socialImage: "/coding-background.jpeg"
 
 Reliable and innovative Frontend Developer with over 10 years of experience building stable websites and apps in fast-paced, collaborative environments.
 Highly skilled in Frontend Architect, Web Performance Optimization and Engineering Management; plus modern libraries and frameworks. 
-Well-versed in Agile.
+Well-versed in Agile and remote work culture.
 Passionate about UX/UI and possess working knowledge of SDLC.
 
 ![](/coding-background.jpeg)
@@ -18,10 +18,11 @@ Passionate about UX/UI and possess working knowledge of SDLC.
 - **Libraries and frameworks**: React, Next.js, GatsbyJS, Flutter, React Native, Ember, Styled-Components, SASS, LESS
 - **Infrastructure**: ESLint, StyleLint, React Testing Library, Jest, Mocha, Storybook, Lint-Staged, Husky, Conventional Commits, Webpack, Git, SVN, Github Actions, Jenkins, Gitlab CI, Semantic Versioning
 - **Management**: Problem-solving, Agile, XP, Collaboration, Hiring, Team motivation
+- **Collaboration**: JIRA, Confluence, Basecamp, Slack, Discord, Figma, Zeplin, Invision
 
 ## Experience
 
-- **[Airhost](https://airhost.co/)**: Frontend Architect; (2021/01 - now)
+- **[Airhost](https://airhost.co/)**: Frontend Architect (Remote); (2021/01 - now)
 
     - Designing enterprise architecture with architectural guidelines in mind;
     - Leading frontend technical development efforts independently, determining areas of complexity and potential risks to successful implementation of advanced web apps;
