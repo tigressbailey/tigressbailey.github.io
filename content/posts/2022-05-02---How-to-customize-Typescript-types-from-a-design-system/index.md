@@ -17,7 +17,7 @@ socialImage: ""
 
 Typescript is a powerful tool for building large-scale, complex, and maintainable applications. It is a superset of JavaScript, and is used to build both client-side and server-side applications.
 It is quite popular in the industry, and is used by our team as well.Although the runtime bugs are still depending on the developer skill set, two major benefits of using Typescript are:
- 1. It reduces the lexical scope bug rate by defining the types of variables and functions explicitly.
+ 1. It reduces the compile time bug rate by defining the types of variables and functions explicitly.
  1. It speeds up the development process by defining the types of variables and functions explicitly.
 
 And yes, define the types of variables and functions explicitly is indeed a good practice.
