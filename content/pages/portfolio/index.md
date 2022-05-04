@@ -5,7 +5,8 @@ socialImage: "/book.jpg"
 ---
 
 ## Web performance optimization
-### PMS
+### Case 1 - PMS
+#### Speed Index and Largest Contentful Paint improvement result
 **Video comparison: Stage is the output.**
 
 <video controls width="100%">
@@ -17,7 +18,8 @@ socialImage: "/book.jpg"
 **Filmstrip**
 ![](/media/pms_filmstrip.png)
 
-### One stay
+### Case 2 - One stay
+#### Speed Index and Largest Contentful Paint improvement result
 **Video comparison: Stage apr is the output.**
 
 <video controls width="100%">
@@ -29,8 +31,20 @@ socialImage: "/book.jpg"
 **Filmstrip**
 ![](/media/one-stay-filmstrip.png)
 
+#### Bundle size reduction
+**Before**
+![one_stay_bundle_size_before](/media/one_stay_bundle_size_before.png)
+**After**
+![one_stay_bundle_size_before](/media/one_stay_bundle_size_after.png)
 
-### Golden data form
+#### Deduplicate requests
+**Before**
+![one_stay_requests_before](/media/one_stay_requests_before.png)
+**After**
+![one_stay_requests_after](/media/one_stay_requests_after.png)
+
+### Case 3 - Golden data form
+#### Speed Index and Largest Contentful Paint improvement result
 **Video comparison: Fusion new is the output.**
 
 <video controls width="100%">
@@ -39,7 +53,8 @@ socialImage: "/book.jpg"
     Sorry, your browser doesn't support embedded videos.
 </video>
 
-### ActiveDotCom
+### Case 4 - ActiveDotCom
+#### Speed Index and Largest Contentful Paint improvement result
 **Video comparison: Left side is the output.**
 
 <video controls width="100%">
