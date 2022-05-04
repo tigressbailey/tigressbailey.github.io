@@ -53,7 +53,7 @@ Passionate about UX/UI and possess working knowledge of SDLC.
 
 ## Education and Languages
 - Bachelor’s Degree in Information Management and Information System, **Chengdu University of Information Technology** *(2005 – 2009)*
-- Fluent in **English**
+- Fluency in **English**
 - Native speaker of **Chinese**
 
 
