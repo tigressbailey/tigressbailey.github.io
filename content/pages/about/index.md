@@ -18,7 +18,7 @@ Passionate about UX/UI and possess working knowledge of SDLC.
 - **Library&Framework**: React, Next.js, GatsbyJS, Flutter, React Native, Ember, Styled-Components, SASS, LESS, Theme-UI
 - **Infrastructure**: ESLint, StyleLint, React Testing Library, Jest, Mocha, Storybook, Lint-Staged, Husky, Conventional Commits, Webpack, Git, SVN, Github Actions, Jenkins, Gitlab CI, Semantic Versioning
 - **Management**: Problem-solving, Agile, XP, Adaptability, Collaboration, Patience, Time management
-- **Tool**: JIRA, Confluence, Basecamp, Slack, Discord, Figma, Zeplin, Invision
+- **Tool**: JIRA, Confluence, Basecamp, Slack, Discord, Figma, Zeplin, Invision, SonarQube, Sentry, LogRocket
 
 ## Experience
 
