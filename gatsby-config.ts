@@ -188,7 +188,7 @@ export default {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: config.url,
-        sitemap: `${config.url}/sitemap.xml`,
+        sitemap: `${config.url}/sitemap/sitemap-index.xml`,
         policy: [{userAgent: "*", allow: "/"}],
       },
     },
