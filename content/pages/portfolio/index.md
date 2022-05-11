@@ -78,12 +78,18 @@ socialImage: "/book.jpg"
 
 
 ## i18n Gatsby website and Headless CMS
+- Screenshot 1
 ![Gatsby website](/media/gatsby_website_01.png)
-![Gatsby website](/media/gatsby_website_02.png)
 
+- Screenshot 2
+![Gatsby website](/media/gatsby_website_02.png)
 
 ---
 
+## Next.js SSR i18n web app
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pcgN9Q6mu3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
 
 ## Tools and components
 
@@ -98,6 +104,9 @@ socialImage: "/book.jpg"
 
 **Real-time cards with masonry layout and optimized visual performance.**
 ![real-time responsive cards](/media/kds.png)
+
+**Availability Calendar**
+![real-time responsive cards](/media/availability_calendar.png)
 
 **Transition indicator**
 - [ember-cli-page-progress](https://github.com/tigressbailey/ember-cli-page-progress)
