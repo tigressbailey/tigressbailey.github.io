@@ -20,7 +20,7 @@ Passionate about UX/UI and possess working knowledge of SDLC.
 - **Management**: Problem-solving, Agile, XP, Adaptability, Collaboration, Patience, Time management
 - **Tool**: JIRA, Confluence, Basecamp, Slack, Discord, Figma, Zeplin, Invision, SonarQube, Sentry, LogRocket
 
-## Experience
+<!-- ## Experience
 
 - **[Airhost](https://airhost.co/)**: Frontend Architect [Remote]; (2021/01 - now)
 
@@ -54,7 +54,7 @@ Passionate about UX/UI and possess working knowledge of SDLC.
 ## Education and Languages
 - Bachelor’s Degree in Information Management and Information System, **Chengdu University of Information Technology** *(2005 – 2009)*
 - Fluency in **English**
-- Native speaker of **Chinese**
+- Native speaker of **Chinese** -->
 
 
 <!-- - **[Active Network](https://www.activenetwork.com/)** (now part of [Global Payments](https://www.globalpayments.com/)): Development Manager; Senior Frontend Developer; (2015/10 - 2020/07)
