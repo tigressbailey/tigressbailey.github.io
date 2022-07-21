@@ -18,7 +18,21 @@ socialImage: "/book.jpg"
 **Filmstrip**
 ![](/media/pms_filmstrip.png)
 
-### Case 2 - One stay
+
+### Case 2 - NextJS Website
+#### Speed Index and Largest Contentful Paint improvement result
+**Video comparison**
+
+<video controls width="100%">
+    <source src="/videos/airhost.jp_performance_comparison.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+**Filmstrip**
+![](/media/nextjs_website.png)
+
+### Case 3 - One stay
 #### Speed Index and Largest Contentful Paint improvement result
 **Video comparison: Stage apr is the output.**
 
