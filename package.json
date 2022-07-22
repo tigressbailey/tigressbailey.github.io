@@ -13,7 +13,7 @@
     "url": "https://github.com/alxshelepenok/gatsby-starter-lumen.git"
   },
   "license": "MIT",
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "author": "Bailey Zhang <bailey.zhang1986@gmail.com>",
   "scripts": {
     "build": "npm run clean && gatsby build",
     "clean": "rimraf .cache public",
