@@ -6,7 +6,7 @@ draft: false
 slug: "what-is-the-differences-between-docker-and-virtual-machines"
 category: "Devops"
 tags:
-  - "Devlops"
+  - "Devops"
   - "Docker"
   - "Virtual Machines"  
 description: ""
