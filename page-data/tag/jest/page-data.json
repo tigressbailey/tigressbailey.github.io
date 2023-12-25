@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/jest",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2023-03-29--How-to-mock-like-a-pro-using-jest/how-to-mock-like-a-pro-using-jest","categorySlug":"/category/frontend/"},"frontmatter":{"title":"How to mock like a Pro using Jest","date":"2023-03-29T12:40:32.169Z","category":"Frontend","description":""}}}]}},"pageContext":{"group":"Jest","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/jest","nextPagePath":"/tag/jest/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-category-template-tsx",
+    "path": "/category/life",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2020-12-21---a-look-back-and-a-look-ahead/a-look-back-and-a-look-ahead","categorySlug":"/category/life/"},"frontmatter":{"description":"","category":"Life","title":"2020 - A Look Back and a Look Ahead","date":"2020-12-21T12:40:32.169Z"}}}]}},"pageContext":{"group":"Life","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/category/life","nextPagePath":"/category/life/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

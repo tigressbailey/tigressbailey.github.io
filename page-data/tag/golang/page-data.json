@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/golang",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2022-10-26--golang-essentials/golang-essentials","categorySlug":"/category/golang/"},"frontmatter":{"title":"Golang essentials","date":"2022-10-26T12:40:32.169Z","category":"Golang","description":""}}}]}},"pageContext":{"group":"Golang","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/golang","nextPagePath":"/tag/golang/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

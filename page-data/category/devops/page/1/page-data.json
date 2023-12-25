@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-category-template-tsx",
+    "path": "/category/devops/page/1",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2018-12-29---legit-scripts-for-the-servers/legit-scripts-for-the-servers","categorySlug":"/category/devops/"},"frontmatter":{"description":"Legit Scripts for the Servers.","category":"Devops","title":"Legit Scripts for the Servers","date":"2018-12-29T12:40:32.169Z"}}}]}},"pageContext":{"group":"Devops","limit":6,"offset":6,"pagination":{"currentPage":1,"prevPagePath":"/category/devops","nextPagePath":"/category/devops/page/2","hasNextPage":false,"hasPrevPage":true}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

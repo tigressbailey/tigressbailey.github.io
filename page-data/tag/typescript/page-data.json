@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/typescript",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2022-05-02---How-to-customize-Typescript-types-from-a-design-system/how-to-customize-typescript-types-from-a-design-system\"","categorySlug":"/category/frontend/"},"frontmatter":{"title":"How to customize Typescript types from a design system","date":"2022-05-02T12:40:32.169Z","category":"Frontend","description":""}}}]}},"pageContext":{"group":"Typescript","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/typescript","nextPagePath":"/tag/typescript/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

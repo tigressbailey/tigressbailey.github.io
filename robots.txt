@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://tigressbailey.github.io/sitemap/sitemap-index.xml
+Host: https://tigressbailey.github.io

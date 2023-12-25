@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/pwa",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2018-11-08---critical-path-of-progressive-web-app/critical-path-of-progressive-web-app","categorySlug":"/category/frontend/"},"frontmatter":{"title":"Critical Path of Progressive Web App","date":"2018-11-08T12:40:32.169Z","category":"Frontend","description":"Everyone has keen interests in Progressive Web App.I was wondering how can I explain it in a simple way."}}}]}},"pageContext":{"group":"pwa","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/pwa","nextPagePath":"/tag/pwa/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

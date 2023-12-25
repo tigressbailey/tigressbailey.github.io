@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-category-template-tsx",
+    "path": "/category/misc",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2020-03-26---advanced-search-operators/advanced-search-operators","categorySlug":"/category/misc/"},"frontmatter":{"description":"","category":"Misc","title":"Advanced Search Operators","date":"2020-03-26T12:40:32.169Z"}}}]}},"pageContext":{"group":"Misc","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/category/misc","nextPagePath":"/category/misc/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

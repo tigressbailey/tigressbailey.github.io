@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-category-template-tsx",
+    "path": "/category/golang",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2022-10-26--golang-essentials/golang-essentials","categorySlug":"/category/golang/"},"frontmatter":{"description":"","category":"Golang","title":"Golang essentials","date":"2022-10-26T12:40:32.169Z"}}}]}},"pageContext":{"group":"Golang","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/category/golang","nextPagePath":"/category/golang/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/engineering-management",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2023-11-01--Fostering-Team-Culture/fostering-team-culture","categorySlug":"/category/engineering-management/"},"frontmatter":{"title":"Fostering Team Culture","date":"2023-11-01T12:40:32.169Z","category":"Engineering management","description":""}}}]}},"pageContext":{"group":"Engineering management","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/engineering-management","nextPagePath":"/tag/engineering-management/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

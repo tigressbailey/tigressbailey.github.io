@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-category-template-tsx",
+    "path": "/category/engineering-management",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2023-11-01--Fostering-Team-Culture/fostering-team-culture","categorySlug":"/category/engineering-management/"},"frontmatter":{"description":"","category":"Engineering management","title":"Fostering Team Culture","date":"2023-11-01T12:40:32.169Z"}}}]}},"pageContext":{"group":"Engineering management","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/category/engineering-management","nextPagePath":"/category/engineering-management/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

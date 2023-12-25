@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/virtual-machines",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2022-08-25--What-is-the-differences-between-docker-and-virtual-machines/what-is-the-differences-between-docker-and-virtual-machines","categorySlug":"/category/devops/"},"frontmatter":{"title":"What is the differences between Docker and Virtual Machines","date":"2022-08-25T12:40:32.169Z","category":"Devops","description":""}}}]}},"pageContext":{"group":"Virtual Machines","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/virtual-machines","nextPagePath":"/tag/virtual-machines/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

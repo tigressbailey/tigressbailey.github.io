@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/ember",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2018-11-03---checkout-my-addon-ember-cli-page-progress/my-addon-ember-cli-page-progress","categorySlug":"/category/frontend/"},"frontmatter":{"title":"Checkout My Addon - ember-cli-page-progress","date":"2018-11-03T12:40:32.169Z","category":"Frontend","description":"After using Ember about one and half year, I released my very first ember addon."}}}]}},"pageContext":{"group":"Ember","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/ember","nextPagePath":"/tag/ember/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

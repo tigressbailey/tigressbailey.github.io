@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/storybook",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2022-06-22---How-to-set-up-storybook-with-next-js-styled-components-and-i18next/how-to-set-up-storybook-with-next-js-styled-components-and-i18next","categorySlug":"/category/frontend/"},"frontmatter":{"title":"How to set up Storybook with Next.js, Styled-Components and I18next","date":"2022-06-22T12:40:32.169Z","category":"Frontend","description":""}}}]}},"pageContext":{"group":"Storybook","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/storybook","nextPagePath":"/tag/storybook/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

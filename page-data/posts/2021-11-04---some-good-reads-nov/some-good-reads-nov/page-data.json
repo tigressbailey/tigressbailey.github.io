@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-template-post-template-tsx",
+    "path": "/posts/2021-11-04---some-good-reads-nov/some-good-reads-nov",
+    "result": {"data":{"markdownRemark":{"id":"ee8623db-3a18-5841-8189-b85ca4df1882","html":"<ul>\n<li><a href=\"https://khalilstemmler.com/articles/client-side-architecture/introduction/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Client-Side Architecture Basics</a></li>\n<li><a href=\"https://www.julian.com/blog/mental-model-examples\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">Mental models</a></li>\n</ul>","fields":{"slug":"/posts/2021-11-04---some-good-reads-nov/some-good-reads-nov","tagSlugs":["/tag/frontend/","/tag/web-development/"]},"frontmatter":{"date":"2021-11-04T12:40:32.169Z","description":"","tags":["Frontend","Web Development"],"title":"Some Good Reads - Nov.","socialImage":""}}},"pageContext":{"slug":"/posts/2021-11-04---some-good-reads-nov/some-good-reads-nov"}},
+    "staticQueryHashes": ["251939775","357378587","401334301"]}

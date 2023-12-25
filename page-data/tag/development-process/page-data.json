@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/development-process",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2023-05-18--Mastering-technical-design-guide-developers-engineers/mastering-technical-design-guide-developers-engineers","categorySlug":"/category/frontend/"},"frontmatter":{"title":"Mastering the Art of Technical Design - A Comprehensive Guide","date":"2023-05-18T12:40:32.169Z","category":"Frontend","description":""}}}]}},"pageContext":{"group":"Development process","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/development-process","nextPagePath":"/tag/development-process/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

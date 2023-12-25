@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-category-template-tsx",
+    "path": "/category/frontend/page/6",
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2018-11-03---checkout-my-addon-ember-cli-page-progress/my-addon-ember-cli-page-progress","categorySlug":"/category/frontend/"},"frontmatter":{"description":"After using Ember about one and half year, I released my very first ember addon.","category":"Frontend","title":"Checkout My Addon - ember-cli-page-progress","date":"2018-11-03T12:40:32.169Z"}}}]}},"pageContext":{"group":"Frontend","limit":6,"offset":36,"pagination":{"currentPage":6,"prevPagePath":"/category/frontend/page/5","nextPagePath":"/category/frontend/page/7","hasNextPage":false,"hasPrevPage":true}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/misc",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2020-03-26---advanced-search-operators/advanced-search-operators","categorySlug":"/category/misc/"},"frontmatter":{"title":"Advanced Search Operators","date":"2020-03-26T12:40:32.169Z","category":"Misc","description":""}}}]}},"pageContext":{"group":"Misc","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/misc","nextPagePath":"/tag/misc/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-template-tag-template-tsx",
+    "path": "/tag/nextjs-migration-guide",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Blog by Bailey Zhang","subtitle":"Frontend development technique and life."}},"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/posts/2023-08-05--Migrate-CRA-to-Nextjs/mastering-technical-design-guide-developers-engineers","categorySlug":"/category/frontend/"},"frontmatter":{"title":"Migrating React App to Next.js","date":"2023-08-05T12:40:32.169Z","category":"Frontend","description":""}}}]}},"pageContext":{"group":"Next.js migration guide","limit":6,"offset":0,"pagination":{"currentPage":0,"prevPagePath":"/tag/nextjs-migration-guide","nextPagePath":"/tag/nextjs-migration-guide/page/1","hasNextPage":false,"hasPrevPage":false}}},
+    "staticQueryHashes": ["251939775","357378587","401334301","63107425"]}
